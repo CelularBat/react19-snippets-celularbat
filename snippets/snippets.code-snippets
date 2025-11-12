@@ -1,0 +1,210 @@
+{
+    "React new component": {
+        "prefix": "rnc",
+        "body": [
+          "import React from 'react';",
+          "",
+          "function  ${1:${TM_FILENAME_BASE}}({ ${2:props} }) {",
+        
+          "    return (",
+          "        <div className='${1:${TM_FILENAME_BASE}}'>",
+          "            ",
+          "        </div>",
+          "    );",
+          "}",
+          "",
+          "export default  ${1:${TM_FILENAME_BASE}};"
+        ],
+        "description": "React new component"
+      },
+
+    "React new component with styles": {
+        "prefix": "rncs",
+        "body": [
+            "import React from 'react';",
+            "import './${1:${TM_FILENAME_BASE}}.css';",
+            "",
+            "function  ${1:${TM_FILENAME_BASE}}({ ${2:props} }) {",
+        
+            "    return (",
+            "        <div className='${1:${TM_FILENAME_BASE}}'>",
+            "            ",
+            "        </div>",
+            "    );",
+            "}",
+            "",
+            "export default  ${1:${TM_FILENAME_BASE}};"
+        ],
+        "description": "React new component with styles"
+    },
+
+    "React new component with CSS Module": {
+        "prefix": "rncm",
+        "body": [
+            "import React from 'react';",
+            "import styles from './${1:${TM_FILENAME_BASE}}.module.css';",
+            "",
+            "function ${1:${TM_FILENAME_BASE}}({ ${2:props} }) {",
+            "  return (",
+            "    <div className={styles.${3:container}}>${4}</div>",
+            "  );",
+            "}",
+            "",
+            "export default ${1:${TM_FILENAME_BASE}};"
+        ],
+        "description": "React component using CSS Modules"
+    },
+
+
+    "React.useState": {
+      "prefix": "rus",
+      "body": [
+        "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = React.useState(${2:});"
+      ],
+      "description": "React.useState"
+    },
+    "React.useEffect": {
+      "prefix": "rue",
+      "body": [
+        "React.useEffect(() => {",
+        "  ${1:}",
+        "}, [${2:}]);"
+      ],
+      "description": "React.useEffect"
+    },
+    "React.useReducer": {
+      "prefix": "rurc",
+      "body": [
+        "const [${1:state}, ${2:dispatch}] = React.useReducer(${3:reducer}, ${4:initialState});"
+      ],
+      "description": "React.useReducer"
+    },
+    "React.useContext": {
+      "prefix": "ruc",
+      "body": [
+        "const {${1:}} = React.useContext(${2:});"
+      ],
+      "description": "React.useContext"
+    },
+    "React.useRef": {
+      "prefix": "rur",
+      "body": [
+        "const ${1:}_Ref = React.useRef(${2:});"
+      ],
+      "description": "React.useRef"
+    },
+    "React.useCallback": {
+      "prefix": "rucb",
+      "body": [
+        "const ${1:callback} = React.useCallback(() => {",
+        "  ${2:}",
+        "}, [${3:}]);"
+      ],
+      "description": "React.useCallback"
+    },
+    "React.useMemo": {
+      "prefix": "rum",
+      "body": [
+        "React.useMemo(() => {",
+        "  ${2:}",
+        "}, [${3:}]);"
+      ],
+      "description": "React.useMemo"
+    },
+    "React.useLayoutEffect": {
+      "prefix": "rule",
+      "body": [
+        "React.useLayoutEffect(() => {",
+        "  ${1:}",
+        "}, [${2:}]);"
+      ],
+      "description": "React.useLayoutEffect"
+    },
+    "React.useInsertionEffect": {
+      "prefix": "ruie",
+      "body": [
+        "React.useInsertionEffect(() => {",
+        "  ${1:}",
+        "}, [${2:}]);"
+      ],
+      "description": "React.useInsertionEffect"
+    },
+    "React.useTransition": {
+      "prefix": "rut",
+      "body": [
+        "const [${1:isPending}, startTransition] = React.useTransition();"
+      ],
+      "description": "React.useTransition"
+    },
+    "React.useDeferredValue": {
+      "prefix": "rudv",
+      "body": [
+        "const ${1:deferred} = React.useDeferredValue(${2:});"
+      ],
+      "description": "React.useDeferredValue"
+    },
+    "React.useFormStatus": {
+      "prefix": "rufs",
+      "body": [
+        "const ${1:status} = React.useFormStatus();"
+      ],
+      "description": "React.useFormStatus"
+    },
+    "React.useDebugValue": {
+      "prefix": "rudbv",
+      "body": [
+        "React.useDebugValue(${1:value}, ${2:formatFn});"
+      ],
+      "description": "React.useDebugValue"
+    },
+    "React.useId": {
+      "prefix": "rui",
+      "body": [
+        "const ${1:id} = React.useId();"
+      ],
+      "description": "React.useId"
+    },
+    "React.useSyncExternalStore": {
+      "prefix": "ruses",
+      "body": [
+        "const ${1:state} = React.useSyncExternalStore(${2:subscribe}, ${3:getSnapshot}, ${4:getServerSnapshot});"
+      ],
+      "description": "React.useSyncExternalStore"
+    },
+    "React.useActionState": {
+      "prefix": "ruas",
+      "body": [
+        "const ${1:state} = React.useActionState(${2:action});"
+      ],
+      "description": "React.useActionState"
+    },
+    "React.useOptimistic": {
+      "prefix": "ruo",
+      "body": [
+        "const [${1:state}, ${2:dispatch}] = React.useOptimistic(${3:initialState}, ${4:reducer});"
+      ],
+      "description": "React.useOptimistic"
+    },
+
+    "React use Zustand Store selector": {
+        "prefix": "ruzs",
+        "body": [
+            "const ${1:stateVar} = ${2:use${3:StoreName}}(state => state.${1:stateVar});"
+        ],
+        "description": "React use Zustand store selector for a single state property"
+    },
+
+    "React use Zustand Store selector multi shallow": {
+        "prefix": "ruzsm",
+        "body": [
+            "import { shallow } from 'zustand/shallow';",
+            "",
+            "const { ${1:stateVar1}, ${2:stateVar2} } = ${3:use${4:StoreName}}(",
+            "  state => ({ ${1:stateVar1}: state.${1:stateVar1}, ${2:stateVar2}: state.${2:stateVar2} }),",
+            "  shallow",
+            ");"
+        ],
+        "description": "React use Zustand store selector with multiple properties using shallow comparison"
+    }
+  }
+  

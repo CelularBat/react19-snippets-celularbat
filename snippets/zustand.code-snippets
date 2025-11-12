@@ -1,0 +1,46 @@
+{
+    "Zustand new store (multi-state)": {
+        "prefix": "zns",
+        "body": [
+          "import { create } from 'zustand';",
+          "",
+          "const ${1/use${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}} = create((set, get) => ({",
+          "  ${2:state1}: ${3:initialValue1},",
+          "  ${4:setState1}: (value) => set({ ${2:state1}: value }),",
+          "  ${5:state2}: ${6:initialValue2},",
+          "  ${7:setState2}: (value) => set({ ${5:state2}: value }),",
+          "  ${8:state3}: ${9:initialValue3},",
+          "  ${10:setState3}: (value) => set({ ${8:state3}: value })",
+          "}));",
+          "",
+          "export default ${1/use${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}};"
+        ],
+        "description": "Create a new Zustand store with multiple states"
+      },
+      "Zustand store with persist (multi-state)": {
+        "prefix": "znsp",
+        "body": [
+          "import { create } from 'zustand';",
+          "import { persist } from 'zustand/middleware';",
+          "",
+          "const ${1/use${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}} = create(persist(",
+          "  (set) => ({",
+          "    ${2:state1}: ${3:initialValue1},",
+          "    ${4:setState1}: (value) => set({ ${2:state1}: value }),",
+          "    ${5:state2}: ${6:initialValue2},",
+          "    ${7:setState2}: (value) => set({ ${5:state2}: value }),",
+          "    ${8:state3}: ${9:initialValue3},",
+          "    ${10:setState3}: (value) => set({ ${8:state3}: value })",
+          "  }),",
+          "  {",
+          "    name: '${11:${TM_FILENAME_BASE}}-storage',",
+          "    getStorage: () => localStorage",
+          "  }",
+          "));",
+          "",
+          "export default ${1/use${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}};"
+        ],
+        "description": "Create a Zustand store with localStorage persistence and multiple states"
+      }
+
+}
