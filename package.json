@@ -1,7 +1,12 @@
 {
   "name": "react19-snippets-celularbat",
   "displayName": "React19-snippets",
-  "description": "Modern code snippets for React19",
+  "description": "Modern code snippets for React19+zustand",
+  "publisher": "CelularBat",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CelularBat/react19-snippets-celularbat"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.0.0"

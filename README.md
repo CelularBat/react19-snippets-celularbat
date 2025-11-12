@@ -1,7 +1,9 @@
 # react19-snippets-celularbat README
 
-This extension contains modern code snippets for [Reactjs][react] 18 and 19 and 2 snippets for zustand stores. No Typescript support. 
+This extension contains modern code snippets for React.js 18 and 19 and 2 snippets for zustand stores. No Typescript support. 
 Snippets for new files are based on filenames. 
+
+Repository: https://github.com/CelularBat/react19-snippets-celularbat
 
 ## Installation
 
