@@ -22,7 +22,7 @@ There you have either the option to show the already installed snippets or insta
 | `rnc→` | React new component |
 | `rncs→` | React new component with .css file import |
 | `rncm→` | React new component with CSS Module file import|
-
+|
 | `rus→` | React.useState |
 | `rue→` | React.useEffect |
 | `rurc→` | React.useReducer |
@@ -40,8 +40,8 @@ There you have either the option to show the already installed snippets or insta
 | `ruses→` | React.useSyncExternalStore |
 | `ruas→` | React.useActionState |
 | `ruo→` | React.useOptimistic |
-
+|
 | `ruzs→` | React use Zustand Store Selector |
-
+|
 | `zns→` | Zustand new store (multi-state) |
 | `znsp→` | Zustand store with persist localStorage (multi-state) |
